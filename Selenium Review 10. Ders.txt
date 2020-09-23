@@ -1,0 +1,21 @@
+Selenium Review 10. Ders
+TESTNG Rapor Oluşturma
+----------------------
+***** TestNG, kendi raporunu kendisini OLUŞTURAMAZ. Yani, TestNG rapor oluşturmak için herhangi bir kütüphaneye sahip değil.
+***** Bunun için mvnrepository.com'dan yardımcı bir kütüphaneyi projemize import edeceğiz.
+1. Örnek : Google Arama
+	- pages paketinin altında GooglePage adlı class oluşturalım.
+	- aramaKutusu webelementini bulalım. (@FindBy)
+	- tumLinkler List<WebElement>, sonuç sayfasındaki tüm linkleri liste şeklinde bulalım.
+	- tests paketinin altında GoogleTest diye bir class oluşturacağız.
+	- aramaKutusu 'a techproeducation yazalım ve arama işlemi yapalım.
+	- Thread.sleep(3000)
+	- tumLinkler 'e bakalım ve bu testlerin içerisinde techproeducation.com adlı websitesi var mı kontrol edelim.
+	- varsa testimiz BAŞARILI, yoksa BAŞARISIZ olsun.
+Cucumber için ihtiyaç duyduğumuz kütüphaneler :
+	1- selenium-java
+	2- webdrivermanager
+	3- cucumber-java
+	4- cucumber-junit
+TestNG  : pages, utilities, tests,   smoketests
+Cucumber: pages, utilities, runners, stepdefinitons
