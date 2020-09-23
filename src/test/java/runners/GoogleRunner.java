@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "stepdefinitions",
         tags = "@amazonurunarama", //tags ="@feature" tümünü çalıştırır, {"@techpro or @selenium"},
-        dryRun = false
+        dryRun = true
 
 
 )
