@@ -1,30 +1,34 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/amazonarama.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/fhctripkayit.feature");
 formatter.feature({
-  "name": "Amazon Urun Arama",
+  "name": "Fhctrip Kayit",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "name": "TC06_kullanici amazonda urun aramasi yapar",
-  "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@amazonurunarama"
+      "name": "@fhctrip"
     }
   ]
 });
+formatter.scenarioOutline({
+  "name": "fhctrip websitesine gider",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
 formatter.step({
-  "name": "kullanici \"http://amazon.com\" sayfaya gider",
+  "name": "kullanici fhctrip kayit sayfasina gider",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "kullanici arama kutusuna \"\u003ckelime\u003e\" yazar",
+  "name": "kullanici username \"\u003cusername\u003e\" girer",
   "keyword": "And "
 });
 formatter.step({
-  "name": "kullanici sonuc sayisini ekrana yazdirir",
-  "keyword": "Then "
+  "name": "kullanici email \"\u003cemail\u003e\" girer",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "kullanicifullname  \"\u003cfullname\u003e\" girer",
+  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -33,33 +37,41 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "kelime"
+        "username",
+        "email",
+        "fullname"
       ]
     },
     {
       "cells": [
-        "headphones"
+        "hasan",
+        "hasan4444@yahoo.com",
+        "hasan var"
       ]
     },
     {
       "cells": [
-        "tv"
+        "halil",
+        "halil4444@yahoo.com",
+        "halil dur"
       ]
     },
     {
       "cells": [
-        "sponge"
+        "hakki",
+        "hakki4444@yahoo.com",
+        "hakki cok"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "TC06_kullanici amazonda urun aramasi yapar",
+  "name": "fhctrip websitesine gider",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@amazonurunarama"
+      "name": "@fhctrip"
     }
   ]
 });
@@ -67,31 +79,41 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici \"http://amazon.com\" sayfaya gider",
+  "name": "kullanici fhctrip kayit sayfasina gider",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.ExplicitStepDefinitions.kullanici_sayfaya_gider(java.lang.String)"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_fhctrip_kayit_sayfasina_gider()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici arama kutusuna \"headphones\" yazar",
+  "name": "kullanici username \"hasan\" girer",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.AmazonStepDefinitions.kullanici_arama_kutusuna_yazar(java.lang.String)"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_username_girer(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici sonuc sayisini ekrana yazdirir",
-  "keyword": "Then "
+  "name": "kullanici email \"hasan4444@yahoo.com\" girer",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_email_girer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanicifullname  \"hasan var\" girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanicifullname_girer(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -100,12 +122,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC06_kullanici amazonda urun aramasi yapar",
+  "name": "fhctrip websitesine gider",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@amazonurunarama"
+      "name": "@fhctrip"
     }
   ]
 });
@@ -113,31 +135,41 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici \"http://amazon.com\" sayfaya gider",
+  "name": "kullanici fhctrip kayit sayfasina gider",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.ExplicitStepDefinitions.kullanici_sayfaya_gider(java.lang.String)"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_fhctrip_kayit_sayfasina_gider()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici arama kutusuna \"tv\" yazar",
+  "name": "kullanici username \"halil\" girer",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.AmazonStepDefinitions.kullanici_arama_kutusuna_yazar(java.lang.String)"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_username_girer(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici sonuc sayisini ekrana yazdirir",
-  "keyword": "Then "
+  "name": "kullanici email \"halil4444@yahoo.com\" girer",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_email_girer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanicifullname  \"halil dur\" girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanicifullname_girer(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -146,12 +178,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC06_kullanici amazonda urun aramasi yapar",
+  "name": "fhctrip websitesine gider",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@amazonurunarama"
+      "name": "@fhctrip"
     }
   ]
 });
@@ -159,31 +191,41 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici \"http://amazon.com\" sayfaya gider",
+  "name": "kullanici fhctrip kayit sayfasina gider",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.ExplicitStepDefinitions.kullanici_sayfaya_gider(java.lang.String)"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_fhctrip_kayit_sayfasina_gider()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici arama kutusuna \"sponge\" yazar",
+  "name": "kullanici username \"hakki\" girer",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.AmazonStepDefinitions.kullanici_arama_kutusuna_yazar(java.lang.String)"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_username_girer(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici sonuc sayisini ekrana yazdirir",
-  "keyword": "Then "
+  "name": "kullanici email \"hakki4444@yahoo.com\" girer",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_email_girer(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanicifullname  \"hakki cok\" girer",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.FhcTripStepDefinitions.kullanicifullname_girer(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import pages.GooglePage;
-import sun.java2d.d3d.D3DRenderQueue;
 import utilities.Driver;
 
 public class GoogleAramaStepdefinitions {

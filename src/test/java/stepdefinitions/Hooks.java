@@ -14,14 +14,14 @@ public class Hooks {
     // Her senaryodan önce çalışır.
     @Before
     public void setUp(){
-        System.out.println("setUp methodu çalıştı.");
+        System.out.println("setUp methodu calisti.");
     }
 
     // TestNG'deki AfterMethod gibi çalışır.
     // Her senaryodan sonra çalışır.
     @After
     public void tearDown(Scenario scenario){
-        System.out.println("tearDown methodu çalıştı.");
+        System.out.println("tearDown methodu calisti.");
 
         // Ekran görüntüsü almak için kullanılıyor.
         final byte[] screenshot =  ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);

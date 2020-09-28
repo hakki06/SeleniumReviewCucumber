@@ -1,9 +1,7 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/default-cucumber-reports",
@@ -12,12 +10,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@techpro", //tags ="@feature" tümünü çalıştırır, {"@techpro or @selenium"},
+        tags =  "@fhctrip" ,
         dryRun = false
-
-
 )
-
-public class GoogleRunner {
-
+public class FhcRunner {
 }

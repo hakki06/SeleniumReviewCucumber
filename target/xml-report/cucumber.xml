@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="55.885">
-<testcase classname="Amazon Urun Arama" name="TC06_kullanici amazonda urun aramasi yapar" time="20.726">
-<system-out><![CDATA[Given kullanici "http://amazon.com" sayfaya gider...........................passed
-And kullanici arama kutusuna "headphones" yazar.............................passed
-Then kullanici sonuc sayisini ekrana yazdirir...............................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="105.196">
+<testcase classname="Fhctrip Kayit" name="fhctrip websitesine gider" time="27.161">
+<system-out><![CDATA[Given kullanici fhctrip kayit sayfasina gider...............................passed
+And kullanici username "hasan" girer........................................passed
+And kullanici email "hasan4444@yahoo.com" girer.............................passed
+And kullanicifullname  "hasan var" girer....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Amazon Urun Arama" name="TC06_kullanici amazonda urun aramasi yapar 2" time="14.556">
-<system-out><![CDATA[Given kullanici "http://amazon.com" sayfaya gider...........................passed
-And kullanici arama kutusuna "tv" yazar.....................................passed
-Then kullanici sonuc sayisini ekrana yazdirir...............................passed
+<testcase classname="Fhctrip Kayit" name="fhctrip websitesine gider 2" time="38.509">
+<system-out><![CDATA[Given kullanici fhctrip kayit sayfasina gider...............................passed
+And kullanici username "halil" girer........................................passed
+And kullanici email "halil4444@yahoo.com" girer.............................passed
+And kullanicifullname  "halil dur" girer....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Amazon Urun Arama" name="TC06_kullanici amazonda urun aramasi yapar 3" time="19.797">
-<system-out><![CDATA[Given kullanici "http://amazon.com" sayfaya gider...........................passed
-And kullanici arama kutusuna "sponge" yazar.................................passed
-Then kullanici sonuc sayisini ekrana yazdirir...............................passed
+<testcase classname="Fhctrip Kayit" name="fhctrip websitesine gider 3" time="38.644">
+<system-out><![CDATA[Given kullanici fhctrip kayit sayfasina gider...............................passed
+And kullanici username "hakki" girer........................................passed
+And kullanici email "hakki4444@yahoo.com" girer.............................passed
+And kullanicifullname  "hakki cok" girer....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

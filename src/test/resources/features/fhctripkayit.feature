@@ -1,7 +1,7 @@
 @fhctrip
   Feature:Fhctrip Kayit
     Scenario Outline: fhctrip websitesine gider
-      Given kullanici fhctrip kayşt sayfasina gider
+      Given kullanici fhctrip kayit sayfasina gider
       And kullanici username "<username>" girer
       And  kullanici email "<email>" girer
       And  kullanicifullname  "<fullname>" girer

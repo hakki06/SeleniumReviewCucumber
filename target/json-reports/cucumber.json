@@ -1,98 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-23T16:23:09.480Z",
+        "start_timestamp": "2020-09-28T16:21:04.131Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 9,
-        "name": "TC06_kullanici amazonda urun aramasi yapar",
-        "description": "",
-        "id": "amazon-urun-arama;tc06-kullanici-amazonda-urun-aramasi-yapar;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1712000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 13079000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "kullanici \"http://amazon.com\" sayfaya gider",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"http://amazon.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "stepdefinitions.ExplicitStepDefinitions.kullanici_sayfaya_gider(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4482000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "kullanici arama kutusuna \"headphones\" yazar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"headphones\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_arama_kutusuna_yazar(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1228000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
-            "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@amazonurunarama"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-23T16:23:30.225Z",
-        "before": [
-          {
-            "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "match": {
@@ -101,13 +16,13 @@
           }
         ],
         "line": 10,
-        "name": "TC06_kullanici amazonda urun aramasi yapar",
+        "name": "fhctrip websitesine gider",
         "description": "",
-        "id": "amazon-urun-arama;tc06-kullanici-amazonda-urun-aramasi-yapar;;3",
+        "id": "fhctrip-kayit;fhctrip-websitesine-gider;;2",
         "after": [
           {
             "result": {
-              "duration": 1327000000,
+              "duration": 1272000000,
               "status": "passed"
             },
             "match": {
@@ -120,61 +35,79 @@
         "steps": [
           {
             "result": {
-              "duration": 8875000000,
+              "duration": 24798000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "kullanici \"http://amazon.com\" sayfaya gider",
+            "name": "kullanici fhctrip kayit sayfasina gider",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"http://amazon.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "stepdefinitions.ExplicitStepDefinitions.kullanici_sayfaya_gider(java.lang.String)"
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_fhctrip_kayit_sayfasina_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4182000000,
+              "duration": 237000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "kullanici arama kutusuna \"tv\" yazar",
+            "name": "kullanici username \"hasan\" girer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"tv\"",
-                  "offset": 25
+                  "val": "\"hasan\"",
+                  "offset": 19
                 }
               ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_arama_kutusuna_yazar(java.lang.String)"
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_username_girer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 168000000,
+              "duration": 316000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
+            "name": "kullanici email \"hasan4444@yahoo.com\" girer",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
+              "arguments": [
+                {
+                  "val": "\"hasan4444@yahoo.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_email_girer(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 257000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanicifullname  \"hasan var\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hasan var\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanicifullname_girer(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@amazonurunarama"
+            "name": "@fhctrip"
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-23T16:23:44.787Z",
+        "start_timestamp": "2020-09-28T16:21:31.339Z",
         "before": [
           {
             "result": {
@@ -187,13 +120,13 @@
           }
         ],
         "line": 11,
-        "name": "TC06_kullanici amazonda urun aramasi yapar",
+        "name": "fhctrip websitesine gider",
         "description": "",
-        "id": "amazon-urun-arama;tc06-kullanici-amazonda-urun-aramasi-yapar;;4",
+        "id": "fhctrip-kayit;fhctrip-websitesine-gider;;3",
         "after": [
           {
             "result": {
-              "duration": 1673000000,
+              "duration": 1260000000,
               "status": "passed"
             },
             "match": {
@@ -206,65 +139,195 @@
         "steps": [
           {
             "result": {
-              "duration": 9525000000,
+              "duration": 36426000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "kullanici \"http://amazon.com\" sayfaya gider",
+            "name": "kullanici fhctrip kayit sayfasina gider",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"http://amazon.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "stepdefinitions.ExplicitStepDefinitions.kullanici_sayfaya_gider(java.lang.String)"
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_fhctrip_kayit_sayfasina_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8239000000,
+              "duration": 252000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "kullanici arama kutusuna \"sponge\" yazar",
+            "name": "kullanici username \"halil\" girer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sponge\"",
-                  "offset": 25
+                  "val": "\"halil\"",
+                  "offset": 19
                 }
               ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_arama_kutusuna_yazar(java.lang.String)"
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_username_girer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 355000000,
+              "duration": 308000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
+            "name": "kullanici email \"halil4444@yahoo.com\" girer",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
+              "arguments": [
+                {
+                  "val": "\"halil4444@yahoo.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_email_girer(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanicifullname  \"halil dur\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"halil dur\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanicifullname_girer(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@amazonurunarama"
+            "name": "@fhctrip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-28T16:22:09.854Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "fhctrip websitesine gider",
+        "description": "",
+        "id": "fhctrip-kayit;fhctrip-websitesine-gider;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1178000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36126000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici fhctrip kayit sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_fhctrip_kayit_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 391000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici username \"hakki\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hakki\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_username_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 723000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici email \"hakki4444@yahoo.com\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hakki4444@yahoo.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanici_email_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanicifullname  \"hakki cok\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hakki cok\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.FhcTripStepDefinitions.kullanicifullname_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@fhctrip"
           }
         ]
       }
     ],
-    "name": "Amazon Urun Arama",
+    "name": "Fhctrip Kayit",
     "description": "",
-    "id": "amazon-urun-arama",
+    "id": "fhctrip-kayit",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/amazonarama.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/fhctripkayit.feature",
+    "tags": [
+      {
+        "name": "@fhctrip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

@@ -7,8 +7,8 @@ import utilities.Driver;
 
 public class FhcTripStepDefinitions {
     FhcTripKayitPage fhcTripKayitPage=new FhcTripKayitPage();
-    @Given("kullanici fhctrip kayşt sayfasina gider")
-    public void kullanici_fhctrip_kayşt_sayfasina_gider() {
+    @Given("kullanici fhctrip kayit sayfasina gider")
+    public void kullanici_fhctrip_kayit_sayfasina_gider() {
         Driver.getDriver().get("http://fhctrip-qa.com/Account/Register");
     }
 
